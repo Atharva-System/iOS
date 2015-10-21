@@ -1,6 +1,7 @@
 # Scrollable TableView + Swift 2.0
 
 Scrollable TableView display data in cell as horizontal
+
 ![ScreenShot](https://github.com/atharvasystem/iOS/blob/master/Swift/MGScrollableTableView/Images/screenshot.png)
 
 # Requires
