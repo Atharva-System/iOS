@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9gQ-T1-g0D">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Action SheetVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ActionSheetVC" customModule="MGActionSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBY-cJ-3Eu">
+                                <rect key="frame" x="150" y="285" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IsO-zT-LCg"/>
+                                    <constraint firstAttribute="width" constant="300" id="pm9-B3-mBB"/>
+                                </constraints>
+                                <state key="normal" title="Simple ActionSheet"/>
+                                <connections>
+                                    <action selector="btnExample1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRh-0v-BIC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkU-F0-9gS">
+                                <rect key="frame" x="150" y="323" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="THq-RG-0fc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="lEg-m9-YfJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="rSx-em-4aa"/>
+                                    <constraint firstAttribute="width" constant="300" id="ys4-Yl-yoQ"/>
+                                </constraints>
+                                <state key="normal" title="AlertController With TextField"/>
+                                <connections>
+                                    <action selector="btnExample2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="31W-uq-7XA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LkU-F0-9gS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Wi-XQ-glT"/>
+                            <constraint firstItem="IBY-cJ-3Eu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFu-6a-q97"/>
+                            <constraint firstItem="IBY-cJ-3Eu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bZs-pB-qnC"/>
+                            <constraint firstItem="LkU-F0-9gS" firstAttribute="top" secondItem="IBY-cJ-3Eu" secondAttribute="bottom" constant="8" symbolic="YES" id="hQ9-cK-dt2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KcT-CM-HrR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="-263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fWR-Na-58v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9gQ-T1-g0D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vP7-Xv-Adb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ABh-AL-pqo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDF-gF-r5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="-263"/>
+        </scene>
+    </scenes>
+</document>
