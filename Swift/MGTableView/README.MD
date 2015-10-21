@@ -1,7 +1,8 @@
 # UITableView + Swift 2.0
 
 UITableView and UITableViewCell implemented using Auto Layout in Storyboard.
-![ScreenShot](/Images/screenshot.png)
+
+![ScreenShot](https://github.com/atharvasystem/iOS/blob/master/Swift/MGTableView/Images/screenshot.png)
 
 # Requires
 
