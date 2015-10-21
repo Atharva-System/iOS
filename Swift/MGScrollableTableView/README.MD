@@ -1,5 +1,3 @@
-//==========
-
 # Scrollable TableView + Swift 2.0
 
 Scrollable TableView display data in cell as horizontal
